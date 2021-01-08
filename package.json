@@ -12,10 +12,18 @@
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
   "author": "saqing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saqing/react-ui-lib-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/saqing/react-ui-lib-starter/issues"
+  },
+  "homepage": "https://github.com/saqing/react-ui-lib-starter#readme",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "yarn build:static && yarn storybook",
+    "start": "yarn build:static && yarn gulp  & yarn storybook",
     "test": "jest --maxWorkers 2",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -149,5 +157,8 @@
     "setupFiles": [
       "<rootDir>/tests/setupTests.ts"
     ]
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
   }
 }
