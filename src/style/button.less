@@ -1,0 +1,65 @@
+button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent; //自定义边框
+  outline: none; //消除默认点击蓝色边框效果
+  user-select: none;
+}
+
+.tui-btn-normal {
+  outline: 1px solid #32638e;
+  padding: 1px;
+
+  & > button {
+    width: 100px;
+    color: white;
+    background-color: rgb(50, 99, 142);
+    border-radius: 2px;
+    padding: 4px 6px 4px 6px;
+    padding: 8px 12px 8px 12px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.tui-btn2,
+.clock {
+  border: 1px solid rgb(191, 191, 191);
+  color: rgb(51, 51, 51);
+  padding: 7px 12px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 11px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  user-select: none;
+  &:hover {
+    background-position: 0px;
+    background-image: linear-gradient(#e7eaf0 0%, #d9dce1 100%);
+    background-color: #d8dde6;
+    transition: background-position 0.1s linear;
+  }
+  & > i {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+
+.tui-btn2.disabled {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+
+  background-color: rgb(230, 230, 230);
+}
